@@ -8,7 +8,7 @@ resource "digitalocean_droplet" "wordpress" {
 
 
 resource "digitalocean_project_resources" "wordpress" {
-  project = data.digitalocean_project.project.id
+  project = data.digitalocean_project.wordpress.id
   resources = [
     digitalocean_droplet.wordpress.urn
   ]

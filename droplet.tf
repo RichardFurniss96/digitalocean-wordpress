@@ -3,5 +3,5 @@ resource "digitalocean_droplet" "wordpress" {
   name   = var.droplet_name
   region = "lon1"
   size   = "s-1vcpu-1gb"
-  ssh_keys = var.ssh_keys
+  ssh_keys = data.digitalocean_ssh_key.key.fingerprint
 }

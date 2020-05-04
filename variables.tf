@@ -3,9 +3,9 @@ variable "droplet_name" {
 }
 
 variable "ssh_keys" {
-  type = map(string)
+  type = list(string)
 }
 
 variable "do_token" {
-    
+
 }
